@@ -1,4 +1,4 @@
-# 4x4 Mesh Network-on-Chip (NoC) — RTL to GDSII
+# 4x4 2D Mesh Network-on-Chip (NoC) Router Using XY Algorithm— RTL to GDSII
 
 A 4×4 2D mesh Network-on-Chip implemented in Verilog and taken through a
 complete RTL-to-GDSII physical design flow using the Cadence digital
