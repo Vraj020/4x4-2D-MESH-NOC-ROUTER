@@ -17,7 +17,7 @@ implementation suite, targeting the SCL 180nm PDK.
 
 Post-synthesis gate-level schematic of one router instance:
 
-![Router schematic](assets/schematic.gif)
+repo/assets/schematic.gif
 
 ## Toolchain
 
