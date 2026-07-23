@@ -16,7 +16,7 @@ implementation suite, targeting the SCL 180nm PDK.
 - **Clock:** 50 MHz
 
 Post-synthesis gate-level schematic of one router instance:
-![Post-synthesis gate-level schematic](assets/schematic.gif)
+![Post-synthesis gate-level schematic](repo/assets/schematic.gif)
 
 ## Toolchain
 
