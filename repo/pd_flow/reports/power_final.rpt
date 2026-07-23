@@ -1,0 +1,205 @@
+
+Power Net Detected:
+        Voltage	    Name
+             0V	    VSS
+          1.62V	    VDD
+Using Power View: ss_view.
+Load RC corner of view ss_view
+
+Begin Power Analysis
+
+             0V	    VSS
+          1.62V	    VDD
+
+Begin Processing Timing Library for Power Calculation
+
+Begin Processing Timing Library for Power Calculation
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1920.77MB/3719.64MB/2042.37MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+clk(50MHz) CK: assigning clock clk to net clk
+Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1921.39MB/3719.64MB/2042.37MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1921.39MB/3719.64MB/2042.37MB)
+
+Begin Processing Signal Activity
+
+
+Starting Levelizing
+2026-Jul-22 12:01:55 (2026-Jul-22 06:31:55 GMT)
+2026-Jul-22 12:01:55 (2026-Jul-22 06:31:55 GMT): 10%
+2026-Jul-22 12:01:55 (2026-Jul-22 06:31:55 GMT): 20%
+2026-Jul-22 12:01:55 (2026-Jul-22 06:31:55 GMT): 30%
+2026-Jul-22 12:01:55 (2026-Jul-22 06:31:55 GMT): 40%
+2026-Jul-22 12:01:55 (2026-Jul-22 06:31:55 GMT): 50%
+2026-Jul-22 12:01:55 (2026-Jul-22 06:31:55 GMT): 60%
+2026-Jul-22 12:01:55 (2026-Jul-22 06:31:55 GMT): 70%
+2026-Jul-22 12:01:55 (2026-Jul-22 06:31:55 GMT): 80%
+2026-Jul-22 12:01:55 (2026-Jul-22 06:31:55 GMT): 90%
+
+Finished Levelizing
+2026-Jul-22 12:01:55 (2026-Jul-22 06:31:55 GMT)
+
+Starting Activity Propagation
+2026-Jul-22 12:01:55 (2026-Jul-22 06:31:55 GMT)
+** INFO:  (VOLTUS_POWR-1356): No default input activity has been set. Defaulting to 0.2.
+Use 'set_default_switching_activity -input_activity' command to change the default activity value.
+
+2026-Jul-22 12:01:55 (2026-Jul-22 06:31:55 GMT): 10%
+2026-Jul-22 12:01:55 (2026-Jul-22 06:31:55 GMT): 20%
+
+Finished Activity Propagation
+2026-Jul-22 12:01:55 (2026-Jul-22 06:31:55 GMT)
+Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1921.39MB/3719.64MB/2042.37MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 0
+      # of cell(s) missing leakage table: 0
+      ----------------------------------------------------------
+
+
+
+Starting Calculating power
+2026-Jul-22 12:01:55 (2026-Jul-22 06:31:55 GMT)
+ ... Calculating switching power
+2026-Jul-22 12:01:55 (2026-Jul-22 06:31:55 GMT): 10%
+2026-Jul-22 12:01:55 (2026-Jul-22 06:31:55 GMT): 20%
+2026-Jul-22 12:01:55 (2026-Jul-22 06:31:55 GMT): 30%
+2026-Jul-22 12:01:55 (2026-Jul-22 06:31:55 GMT): 40%
+2026-Jul-22 12:01:55 (2026-Jul-22 06:31:55 GMT): 50%
+ ... Calculating internal and leakage power
+2026-Jul-22 12:01:55 (2026-Jul-22 06:31:55 GMT): 60%
+2026-Jul-22 12:01:55 (2026-Jul-22 06:31:55 GMT): 70%
+2026-Jul-22 12:01:55 (2026-Jul-22 06:31:55 GMT): 80%
+2026-Jul-22 12:01:55 (2026-Jul-22 06:31:55 GMT): 90%
+
+Finished Calculating power
+2026-Jul-22 12:01:55 (2026-Jul-22 06:31:55 GMT)
+      # of MSMV cell(s) missing power_level: 0
+Ended Power Computation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1922.80MB/3727.65MB/2042.37MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1922.80MB/3727.65MB/2042.37MB)
+
+Ended Power Analysis: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1922.80MB/3727.65MB/2042.37MB)
+
+Begin Boundary Leakage Calculation
+Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=1922.80MB/3727.65MB/2042.37MB)
+Begin Static Power Report Generation
+*----------------------------------------------------------------------------------------
+*	Innovus 21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+*	
+*
+* 	Date & Time:	2026-Jul-22 12:01:55 (2026-Jul-22 06:31:55 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: mesh_4x4_top
+*
+*	Liberty Libraries used:
+*	        ss_view: /home/Cadance_libs/sclpdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib
+*
+*	Parasitic Files used:
+*
+*       Power View : ss_view
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs
+*
+*       report_power
+*
+-----------------------------------------------------------------------------------------
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        4.08851893 	   57.8826%
+Total Switching Power:       2.97344703 	   42.0962%
+Total Leakage Power:         0.00149755 	    0.0212%
+Total Power:                 7.06346351
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                         2.949      0.4176   0.0007344       3.367       47.67
+Macro                                  0           0           0           0           0
+IO                                     0           0           0           0           0
+Combinational                     0.8759       1.973   0.0006604        2.85       40.34
+Clock (Combinational)             0.2635      0.5827   0.0001027      0.8464       11.98
+Clock (Sequential)                     0           0           0           0           0
+-----------------------------------------------------------------------------------------
+Total                              4.089       2.973    0.001498       7.063         100
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                      1.62      4.089       2.973    0.001498       7.063         100
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+clk                               0.2635      0.5827   0.0001027      0.8464       11.98
+-----------------------------------------------------------------------------------------
+Total                             0.2635      0.5827   0.0001027      0.8464       11.98
+-----------------------------------------------------------------------------------------
+Clock: clk
+Clock Period: 0.020000 usec 
+Clock Toggle Rate:   100.0000 Mhz 
+Clock Static Probability:  0.5000
+  
+ 
+ 
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*              Highest Average Power:       CTS_ccl_a_buf_00006 (bufbdf):            0.058
+*              Highest Leakage Power:       CTS_ccl_a_buf_00015 (bufbdf):         6.85e-06
+*                Total Cap:      1.38291e-10 F
+*                Total instances in design:  5542
+*                Total instances in design with no power:     0
+*                Total instances in design with no activty:     0
+
+*                Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+ 
+** INFO:  (VOLTUS_POWR-3465): There are 0 decaps and 0 fillers in the design
+
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=1925.40MB/3727.65MB/2042.37MB)
+

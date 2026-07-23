@@ -1,0 +1,19 @@
+    Hinst Name          Module Name                         Inst Count           Total Area
+----------------------------------------------------------------------------------------
+mesh_4x4_top                                                      5542           153927.424
+ ROW[0].COL[0].u_router noc_router_XPOS0_YPOS0_AW2_PW8_DW12        157             5099.136
+ ROW[0].COL[1].u_router noc_router_XPOS1_YPOS0_AW2_PW8_DW12        296             8837.248
+ ROW[0].COL[2].u_router noc_router_XPOS2_YPOS0_AW2_PW8_DW12        303             9094.400
+ ROW[0].COL[3].u_router noc_router_XPOS3_YPOS0_AW2_PW8_DW12        145             5274.752
+ ROW[1].COL[0].u_router noc_router_XPOS0_YPOS1_AW2_PW8_DW12        336             9210.432
+ ROW[1].COL[1].u_router noc_router_XPOS1_YPOS1_AW2_PW8_DW12        516            13440.896
+ ROW[1].COL[2].u_router noc_router_XPOS2_YPOS1_AW2_PW8_DW12        585            14667.072
+ ROW[1].COL[3].u_router noc_router_XPOS3_YPOS1_AW2_PW8_DW12        335             9367.232
+ ROW[2].COL[0].u_router noc_router_XPOS0_YPOS2_AW2_PW8_DW12        385             9787.456
+ ROW[2].COL[1].u_router noc_router_XPOS1_YPOS2_AW2_PW8_DW12        560            14137.088
+ ROW[2].COL[2].u_router noc_router_XPOS2_YPOS2_AW2_PW8_DW12        578            14569.856
+ ROW[2].COL[3].u_router noc_router_XPOS3_YPOS2_AW2_PW8_DW12        295             8486.016
+ ROW[3].COL[0].u_router noc_router_XPOS0_YPOS3_AW2_PW8_DW12        191             5807.872
+ ROW[3].COL[1].u_router noc_router_XPOS1_YPOS3_AW2_PW8_DW12        340             9577.344
+ ROW[3].COL[2].u_router noc_router_XPOS2_YPOS3_AW2_PW8_DW12        362            10254.720
+ ROW[3].COL[3].u_router noc_router_XPOS3_YPOS3_AW2_PW8_DW12        143             5422.144
