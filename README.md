@@ -12,8 +12,8 @@ implementation suite, targeting the SCL 180nm PDK.
   per-output round-robin arbiter driving a one-hot crossbar mux
 - **Top module:** `mesh_4x4_top` (16× `noc_router` instances, parameterized
   by `XPOS`/`YPOS`, wired into a 2D mesh with N/S/E/W neighbor links)
-- **PDK:** SCL 180nm, 6-metal (6M1L) stack, SS (slow-slow) signoff corner
-- **Clock:** 50 MHz
+- **PDK:** SCL 180nm, 6-metal (6M1L) stack, SS (slow-slow) & FF(fast-fast)signoff corner
+- **Clock:** 143.472 MHz
 
 Post-synthesis gate-level schematic of one router instance:
 ![Post-synthesis gate-level schematic](repo/assets/schematic.gif)
@@ -59,25 +59,29 @@ GDSII (mesh_4x4_top.gds)
 | Geometry                   | ✅ 0 violations (all categories) |
 | Connectivity               | ✅ No problems or warnings     |
 | Power connectivity (VDD/VSS)| ✅ No problems or warnings     |
-| Timing (setup, SS corner)  | ✅ +9.087 ns slack              |
+| Timing                      | ✅ +1.041 ns slack              |
 
 **Design statistics:**
+| Metric                  | Value                         |
+|-------------------------|-------------------------------|
+| Standard cell instances | **7,495**                     |
+| Total std-cell area     | **153,927.4 µm²**             |
+| Core utilization        | **65.68%**                    |
+| Clock period            | **6.970 ns**                  |
+| Clock frequency         | **143.472 MHz**               |
+| Setup slack             | **+1.041 ns**                 |
+| Data path delay         | **5.474 ns**                  |
+| Total power             | **24.8643 mW**                |
+| — Internal power        | **14.7299 mW (59.24%)**       |
+| — Switching power       | **10.1324 mW (40.75%)**       |
+| — Leakage power         | **0.001977 mW (0.008%)**      |
+| Power corner            | **SS (`ss_view`), 1.62 V**    |
+| MMMC timing views       | **FF + SS**                   |
 
-| Metric              | Value                     |
-|----------------------|---------------------------|
-| Standard cell instances | 5,542                  |
-| Total std-cell area  | 153,927.4 µm²             |
-| Core utilization     | 65.68%                    |
-| Clock frequency      | 50 MHz                    |
-| Total power          | 7.063 mW                  |
-| — Internal power     | 4.089 mW (57.9%)          |
-| — Switching power    | 2.973 mW (42.1%)          |
-| — Leakage power      | 0.0015 mW (0.02%)         |
-
-Per-tile area naturally scales with router connectivity — corner routers
-(2 active ports) are smallest (~5,100–5,800 µm²), edge routers
-(3 active ports) are mid-sized (~8,500–9,800 µm²), and the four center
-routers (all 5 ports active) are largest (~13,400–14,700 µm²).
+The physical area varies across mesh tiles according to router connectivity.
+Corner routers have fewer active directional ports and therefore require less
+logic, edge routers have intermediate connectivity, and center routers have
+all five ports active and generally occupy the largest area.
 
 ## Output
 
