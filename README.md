@@ -14,7 +14,7 @@ implementation suite, targeting the SCL 180nm PDK.
   by `XPOS`/`YPOS`, wired into a 2D mesh with N/S/E/W neighbor links)
 - **PDK:** SCL 180nm, 6-metal (6M1L) stack, SS (slow-slow) & FF(fast-fast)signoff corner
 - **Clock Frequency:** 143.472 MHz
-- - **Clock Period** 6.970ns
+-  **Clock Period** 6.970ns
 
 Post-synthesis gate-level schematic of one router instance:
 ![Post-synthesis gate-level schematic](repo/assets/schematic.gif)
