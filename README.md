@@ -13,8 +13,8 @@ implementation suite, targeting the SCL 180nm PDK.
 - **Top module:** `mesh_4x4_top` (16× `noc_router` instances, parameterized
   by `XPOS`/`YPOS`, wired into a 2D mesh with N/S/E/W neighbor links)
 - **PDK:** SCL 180nm, 6-metal (6M1L) stack, SS (slow-slow) & FF(fast-fast)signoff corner
-- **Clock Frequency:** 143.472 MHz
--  **Clock Period** 6.970ns
+- **Clock Frequency:** 150.472 MHz
+
 
 Post-synthesis gate-level schematic of one router instance:
 ![Post-synthesis gate-level schematic](repo/assets/schematic.gif)
@@ -60,7 +60,7 @@ GDSII (mesh_4x4_top.gds)
 | Geometry                   | ✅ 0 violations (all categories) |
 | Connectivity               | ✅ No problems or warnings     |
 | Power connectivity (VDD/VSS)| ✅ No problems or warnings     |
-| Timing                      | ✅ +1.041 ns slack              |
+| Timing                      | ✅ +0.807 ns slack              |
 
 **Design statistics:**
 | Metric                  | Value                         |
