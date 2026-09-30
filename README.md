@@ -90,7 +90,7 @@ Final routed layout in Innovus, showing the 4×4 mesh structure, full
 metal-stack routing (M1–M6), and the power ring/stripe network added
 prior to placement and routing:
 
-![Final routed layout](repo/assets/layout.png)
+![Final routed layout](repo/assets/layout_vfinal.png)
 
 
 ## Repository Structure
